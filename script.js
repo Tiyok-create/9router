@@ -18,6 +18,8 @@ let charIndex = 0;
 let isDeleting = false;
 
 function typeLoop() {
+  if (!typedText) return;
+
   const currentWord = roles[roleIndex];
 
   if (!isDeleting) {
@@ -43,56 +45,72 @@ function typeLoop() {
   setTimeout(typeLoop, delay);
 }
 
-typeLoop();
+if (typedText) {
+  typeLoop();
+}
 
 function handleScroll() {
   const scrollTop = window.scrollY;
   const docHeight = document.body.scrollHeight - window.innerHeight;
   const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
 
-  scrollProgressBar.style.width = `${Math.min(progress, 100)}%`;
-
-  if (window.scrollY > 120) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
+  if (scrollProgressBar) {
+    scrollProgressBar.style.width = `${Math.min(progress, 100)}%`;
   }
 
-  if (window.scrollY > 500) {
-    backToTop.classList.add('visible');
-  } else {
-    backToTop.classList.remove('visible');
+  if (navbar) {
+    if (window.scrollY > 120) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }
+
+  if (backToTop) {
+    if (window.scrollY > 500) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
   }
 }
 
 window.addEventListener('scroll', handleScroll);
 handleScroll();
 
-mobileToggle.addEventListener('click', () => {
-  navLinksContainer.classList.toggle('open');
-});
+if (mobileToggle && navLinksContainer) {
+  mobileToggle.addEventListener('click', () => {
+    navLinksContainer.classList.toggle('open');
+  });
+}
 
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
     navLinks.forEach((item) => item.classList.remove('active'));
     link.classList.add('active');
 
-    if (navLinksContainer.classList.contains('open')) {
+    if (navLinksContainer && navLinksContainer.classList.contains('open')) {
       navLinksContainer.classList.remove('open');
     }
   });
 });
 
-themeToggle.addEventListener('click', () => {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
-  document.documentElement.setAttribute('data-theme', nextTheme);
-  localStorage.setItem('theme', nextTheme);
-});
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', nextTheme);
+    localStorage.setItem('theme', nextTheme);
+  });
+}
 
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'light') {
-  document.documentElement.setAttribute('data-theme', 'light');
+try {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+} catch (error) {
+  console.warn('Theme preference could not be loaded:', error);
 }
 
 filterButtons.forEach((button) => {
@@ -108,23 +126,29 @@ filterButtons.forEach((button) => {
   });
 });
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
 
-revealItems.forEach((item) => revealObserver.observe(item));
+  revealItems.forEach((item) => revealObserver.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('visible'));
+}
 
-backToTop.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+if (backToTop) {
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
 
 const projectData = {
   'pulse-finance': {
@@ -211,27 +235,34 @@ document.querySelectorAll('.project-modal-trigger').forEach((button) => {
   });
 });
 
-closeModalButton.addEventListener('click', closeModal);
-modal.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    closeModal();
-  }
-});
+if (closeModalButton) {
+  closeModalButton.addEventListener('click', closeModal);
+}
+
+if (modal) {
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+}
 
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && modal.classList.contains('active')) {
+  if (event.key === 'Escape' && modal && modal.classList.contains('active')) {
     closeModal();
   }
 });
 
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
+if (contactForm && toast) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-  toast.classList.add('show');
-  contactForm.reset();
+    toast.classList.add('show');
+    contactForm.reset();
 
-  clearTimeout(window.toastTimeout);
-  window.toastTimeout = setTimeout(() => {
-    toast.classList.remove('show');
-  }, 2200);
-});
+    clearTimeout(window.toastTimeout);
+    window.toastTimeout = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 2200);
+  });
+}

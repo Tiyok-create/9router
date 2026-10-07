@@ -13,18 +13,18 @@
   --bg-card-hover: rgba(26, 35, 55, 0.85);
   --bg-glass: rgba(255, 255, 255, 0.03);
   --bg-input: rgba(16, 22, 35, 0.8);
-  
+
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
-  
+
   --accent-primary: #6366f1;
   --accent-primary-hover: #4f46e5;
   --accent-secondary: #06b6d4;
   --accent-purple: #a855f7;
   --accent-pink: #ec4899;
   --accent-green: #10b981;
-  
+
   --gradient-brand: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
   --gradient-text: linear-gradient(135deg, #ffffff 20%, #94a3b8 100%);
   --gradient-accent: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
@@ -33,7 +33,7 @@
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-hover: rgba(99, 102, 241, 0.4);
   --border-focus: #6366f1;
-  
+
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.2);
   --shadow-md: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
@@ -51,7 +51,7 @@
   --radius-md: 14px;
   --radius-lg: 20px;
   --radius-full: 9999px;
-  
+
   --container-width: 1200px;
   --nav-height: 80px;
 }
@@ -71,7 +71,7 @@
 
   --border-subtle: rgba(0, 0, 0, 0.08);
   --border-hover: rgba(99, 102, 241, 0.45);
-  
+
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 20px 40px -15px rgba(0, 0, 0, 0.12);
@@ -82,7 +82,9 @@
 }
 
 /* Base & Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -154,9 +156,17 @@ body {
 }
 
 @keyframes floatLight {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(60px, 40px) scale(1.15); }
-  100% { transform: translate(-40px, 80px) scale(0.9); }
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(60px, 40px) scale(1.15);
+  }
+
+  100% {
+    transform: translate(-40px, 80px) scale(0.9);
+  }
 }
 
 /* Reading Progress Bar */
@@ -179,7 +189,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--text-primary);
   font-weight: 700;
@@ -234,6 +249,7 @@ img {
 .text-gradient {
   background: var(--gradient-brand);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -503,9 +519,20 @@ img {
 }
 
 @keyframes pulseGreen {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
 }
 
 .hero-title {
@@ -538,8 +565,15 @@ img {
 }
 
 @keyframes blinkCursor {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-description {
@@ -699,8 +733,13 @@ img {
 }
 
 @keyframes floatStat {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-12px); }
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-12px);
+  }
 }
 
 /* ==========================================================================
@@ -813,6 +852,7 @@ img {
   font-weight: 800;
   background: var(--gradient-brand);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
   margin-bottom: 0.6rem;
