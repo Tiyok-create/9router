@@ -1,600 +1,609 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portofolio personal website modern dan elegan dengan desain responsif."
-    />
-    <title>Aryo Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="scroll-progress-bar" aria-hidden="true"></div>
 
-    <div class="bg-ambient-lights" aria-hidden="true">
-      <span class="ambient-light ambient-light-1"></span>
-      <span class="ambient-light ambient-light-2"></span>
-      <span class="ambient-light ambient-light-3"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio personal website modern dan elegan dengan desain responsif." />
+  <title>Aryo Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <div class="bg-ambient-lights" aria-hidden="true">
+    <span class="ambient-light ambient-light-1"></span>
+    <span class="ambient-light ambient-light-2"></span>
+    <span class="ambient-light ambient-light-3"></span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="logo" aria-label="Beranda">
+        <span class="logo-icon">A</span>
+        <span>Aryo</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon-moon">☾</span>
+          <span class="theme-icon-sun">☀</span>
+        </button>
+
+        <button class="mobile-toggle" type="button" id="mobileToggle" aria-label="Toggle menu">
+          ☰
+        </button>
+      </div>
     </div>
+  </header>
 
-    <header class="navbar" id="navbar">
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content fade-in-up">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            Student of PPLH
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <span class="text-gradient">Aryo</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span>Student</span>
+            <span class="typed-text" id="typedText"></span>
+            <span class="type-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Saya adalah siswa kelas XI jurusan PPLG yang tertarik pada teknologi, desain, dan pengembangan web.
+            Saya belajar membangun solusi digital yang sederhana, rapi, dan bermanfaat.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">Lihat Proyek</a>
+            <a class="btn btn-secondary" href="#contact">Hubungi Saya</a>
+          </div>
+
+          <div class="hero-socials">
+            <span>Follow</span>
+            <div class="social-links">
+              <a class="btn btn-icon" href="#" aria-label="Instagram">◎</a>
+              <a class="btn btn-icon" href="#" aria-label="GitHub">◍</a>
+              <a class="btn btn-icon" href="#" aria-label="LinkedIn">◐</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-in-up">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-glow"></div>
+
+            <div class="avatar-card">
+              <div class="avatar-image-container">
+                <img src="assets/images/foto.jpg" alt="Portrait of Aryo" class="avatar-image" />
+              </div>
+            </div>
+
+            <div class="floating-stat stat-badge-1">
+              <div class="stat-icon primary">✦</div>
+              <div class="stat-content">
+                <div class="stat-number">4+</div>
+                <div class="stat-label">Years</div>
+              </div>
+            </div>
+
+            <div class="floating-stat stat-badge-2">
+              <div class="stat-icon cyan">⚡</div>
+              <div class="stat-content">
+                <div class="stat-number">18</div>
+                <div class="stat-label">Projects</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-text fade-in-up">
+          <span class="section-tag">About Me</span>
+          <h3>Mengembangkan kemampuan di dunia digital dan teknologi.</h3>
+          <p>
+            Saya Aryo Tri Anggoro Widodo, siswa kelas XI jurusan RPL. Saya sedang belajar tentang web development,
+            desain antarmuka, dan pemecahan masalah berbasis teknologi. Saya tertarik pada hal-hal yang kreatif,
+            logis, dan bisa memberi manfaat bagi orang lain.
+          </p>
+          <p>
+            Saya ingin terus belajar, meningkatkan kemampuan, dan membuat karya yang sederhana namun berkesan,
+            terutama dalam bidang desain web dan pemrograman.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <div class="info-label">Nama</div>
+              <div class="info-value">Aryo Tri Anggoro Widodo</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Kelas</div>
+              <div class="info-value">XI</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Jurusan</div>
+              <div class="info-value">PPLG</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Status</div>
+              <div class="info-value">Belajar aktif</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-cards-grid fade-in-up">
+          <div class="stat-card">
+            <div class="card-number">XI</div>
+            <div class="card-label">Kelas</div>
+          </div>
+          <div class="stat-card">
+            <div class="card-number">PPLG</div>
+            <div class="card-label">Jurusan</div>
+          </div>
+          <div class="stat-card">
+            <div class="card-number">12+</div>
+            <div class="card-label">Kegiatan belajar</div>
+          </div>
+          <div class="stat-card">
+            <div class="card-number">100%</div>
+            <div class="card-label">Semangat belajar</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
       <div class="container">
-        <a href="#home" class="logo" aria-label="Beranda">
-          <span class="logo-icon">A</span>
-          <span>Aryo</span>
-        </a>
+        <div class="section-header fade-in-up">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">Bidang yang sedang saya pelajari.</h2>
+          <p class="section-desc">
+            Saya sedang mengembangkan kemampuan di bidang desain, pemrograman web, dan teknologi informasi dengan fokus
+            pada hasil yang rapi dan mudah dipahami.
+          </p>
+        </div>
 
-        <nav aria-label="Main navigation">
-          <ul class="nav-links" id="navLinks">
-            <li><a class="nav-link active" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#skills">Skills</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#experience">Experience</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="skills-filter fade-in-up">
+          <button class="filter-btn active" type="button" data-filter="all">Semua</button>
+          <button class="filter-btn" type="button" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" type="button" data-filter="design">Design</button>
+          <button class="filter-btn" type="button" data-filter="backend">Backend</button>
+        </div>
 
-        <div class="nav-actions">
-          <button class="theme-toggle" type="button" id="themeToggle" aria-label="Toggle theme">
-            <span class="theme-icon-moon">☾</span>
-            <span class="theme-icon-sun">☀</span>
-          </button>
+        <div class="skills-grid">
+          <article class="skill-card fade-in-up" data-category="frontend">
+            <div class="skill-top">
+              <div class="skill-icon">⚛</div>
+              <div class="skill-info">
+                <h4>React</h4>
+                <span>Frontend</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-progress" style="width: 88%"></div>
+            </div>
+          </article>
 
-          <button class="mobile-toggle" type="button" id="mobileToggle" aria-label="Toggle menu">
-            ☰
-          </button>
+          <article class="skill-card fade-in-up" data-category="frontend">
+            <div class="skill-top">
+              <div class="skill-icon">🟨</div>
+              <div class="skill-info">
+                <h4>JavaScript</h4>
+                <span>Frontend</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-progress" style="width: 92%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card fade-in-up" data-category="backend">
+            <div class="skill-top">
+              <div class="skill-icon">🟦</div>
+              <div class="skill-info">
+                <h4>Node.js</h4>
+                <span>Backend</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-progress" style="width: 80%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card fade-in-up" data-category="design">
+            <div class="skill-top">
+              <div class="skill-icon">🎨</div>
+              <div class="skill-info">
+                <h4>Figma</h4>
+                <span>Design</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-progress" style="width: 95%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card fade-in-up" data-category="frontend">
+            <div class="skill-top">
+              <div class="skill-icon">🎯</div>
+              <div class="skill-info">
+                <h4>Next.js</h4>
+                <span>Frontend</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-progress" style="width: 84%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card fade-in-up" data-category="design">
+            <div class="skill-top">
+              <div class="skill-icon">✒</div>
+              <div class="skill-info">
+                <h4>UX Writing</h4>
+                <span>Design</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-progress" style="width: 90%"></div>
+            </div>
+          </article>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="container hero-grid">
-          <div class="hero-content fade-in-up">
-            <div class="hero-badge">
-              <span class="pulse-dot"></span>
-              Student of RPL
-            </div>
-
-            <h1 class="hero-title">
-              Hello, I'm <span class="text-gradient">Aryo</span>
-            </h1>
-
-            <div class="hero-role-wrapper">
-              <span>Student</span>
-              <span class="typed-text" id="typedText"></span>
-              <span class="type-cursor">|</span>
-            </div>
-
-            <p class="hero-description">
-              Saya adalah siswa kelas XI jurusan PPLG yang tertarik pada teknologi, desain, dan pengembangan web. 
-              Saya belajar membangun solusi digital yang sederhana, rapi, dan bermanfaat.
-            </p>
-
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="#projects">Lihat Proyek</a>
-              <a class="btn btn-secondary" href="#contact">Hubungi Saya</a>
-            </div>
-
-            <div class="hero-socials">
-              <span>Follow</span>
-              <div class="social-links">
-                <a class="btn btn-icon" href="#" aria-label="Instagram">◎</a>
-                <a class="btn btn-icon" href="#" aria-label="GitHub">◍</a>
-                <a class="btn btn-icon" href="#" aria-label="LinkedIn">◐</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-visual fade-in-up">
-            <div class="avatar-card-wrapper">
-              <div class="avatar-glow"></div>
-
-              <div class="avatar-card">
-                <div class="avatar-image-container">
-                  <img
-                    src="assets/images/foto.jpg"
-                    alt="Portrait of Aryo"
-                    class="avatar-image"
-                  />
-                </div>
-              </div>
-
-              <div class="floating-stat stat-badge-1">
-                <div class="stat-icon primary">✦</div>
-                <div class="stat-content">
-                  <div class="stat-number">4+</div>
-                  <div class="stat-label">Years</div>
-                </div>
-              </div>
-
-              <div class="floating-stat stat-badge-2">
-                <div class="stat-icon cyan">⚡</div>
-                <div class="stat-content">
-                  <div class="stat-number">18</div>
-                  <div class="stat-label">Projects</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="about" id="about">
-        <div class="container about-grid">
-          <div class="about-text fade-in-up">
-            <span class="section-tag">About Me</span>
-            <h3>Mengembangkan kemampuan di dunia digital dan teknologi.</h3>
-            <p>
-              Saya Aryo Tri Anggoro Widodo, siswa kelas XI jurusan RPL. Saya sedang belajar tentang web development,
-              desain antarmuka, dan pemecahan masalah berbasis teknologi. Saya tertarik pada hal-hal yang kreatif,
-              logis, dan bisa memberi manfaat bagi orang lain.
-            </p>
-            <p>
-              Saya ingin terus belajar, meningkatkan kemampuan, dan membuat karya yang sederhana namun berkesan,
-              terutama dalam bidang desain web dan pemrograman.
-            </p>
-
-            <div class="about-info-grid">
-              <div class="info-item">
-                <div class="info-label">Nama</div>
-                <div class="info-value">Aryo Tri Anggoro Widodo</div>
-              </div>
-              <div class="info-item">
-                <div class="info-label">Kelas</div>
-                <div class="info-value">XI</div>
-              </div>
-              <div class="info-item">
-                <div class="info-label">Jurusan</div>
-                <div class="info-value">PPLG</div>
-              </div>
-              <div class="info-item">
-                <div class="info-label">Status</div>
-                <div class="info-value">Belajar aktif</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="stats-cards-grid fade-in-up">
-            <div class="stat-card">
-              <div class="card-number">XI</div>
-              <div class="card-label">Kelas</div>
-            </div>
-            <div class="stat-card">
-              <div class="card-number">PPLG</div>
-              <div class="card-label">Jurusan</div>
-            </div>
-            <div class="stat-card">
-              <div class="card-number">12+</div>
-              <div class="card-label">Kegiatan belajar</div>
-            </div>
-            <div class="stat-card">
-              <div class="card-number">100%</div>
-              <div class="card-label">Semangat belajar</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="skills" id="skills">
-        <div class="container">
-          <div class="section-header fade-in-up">
-            <span class="section-tag">Skills</span>
-            <h2 class="section-title">Bidang yang sedang saya pelajari.</h2>
-            <p class="section-desc">
-              Saya sedang mengembangkan kemampuan di bidang desain, pemrograman web, dan teknologi informasi dengan fokus pada hasil yang rapi dan mudah dipahami.
-            </p>
-          </div>
-
-          <div class="skills-filter fade-in-up">
-            <button class="filter-btn active" type="button" data-filter="all">Semua</button>
-            <button class="filter-btn" type="button" data-filter="frontend">Frontend</button>
-            <button class="filter-btn" type="button" data-filter="design">Design</button>
-            <button class="filter-btn" type="button" data-filter="backend">Backend</button>
-          </div>
-
-          <div class="skills-grid">
-            <article class="skill-card fade-in-up" data-category="frontend">
-              <div class="skill-top">
-                <div class="skill-icon">⚛</div>
-                <div class="skill-info">
-                  <h4>React</h4>
-                  <span>Frontend</span>
-                </div>
-              </div>
-              <div class="skill-bar-wrapper">
-                <div class="skill-bar-progress" style="width: 88%"></div>
-              </div>
-            </article>
-
-            <article class="skill-card fade-in-up" data-category="frontend">
-              <div class="skill-top">
-                <div class="skill-icon">🟨</div>
-                <div class="skill-info">
-                  <h4>JavaScript</h4>
-                  <span>Frontend</span>
-                </div>
-              </div>
-              <div class="skill-bar-wrapper">
-                <div class="skill-bar-progress" style="width: 92%"></div>
-              </div>
-            </article>
-
-            <article class="skill-card fade-in-up" data-category="backend">
-              <div class="skill-top">
-                <div class="skill-icon">🟦</div>
-                <div class="skill-info">
-                  <h4>Node.js</h4>
-                  <span>Backend</span>
-                </div>
-              </div>
-              <div class="skill-bar-wrapper">
-                <div class="skill-bar-progress" style="width: 80%"></div>
-              </div>
-            </article>
-
-            <article class="skill-card fade-in-up" data-category="design">
-              <div class="skill-top">
-                <div class="skill-icon">🎨</div>
-                <div class="skill-info">
-                  <h4>Figma</h4>
-                  <span>Design</span>
-                </div>
-              </div>
-              <div class="skill-bar-wrapper">
-                <div class="skill-bar-progress" style="width: 95%"></div>
-              </div>
-            </article>
-
-            <article class="skill-card fade-in-up" data-category="frontend">
-              <div class="skill-top">
-                <div class="skill-icon">🎯</div>
-                <div class="skill-info">
-                  <h4>Next.js</h4>
-                  <span>Frontend</span>
-                </div>
-              </div>
-              <div class="skill-bar-wrapper">
-                <div class="skill-bar-progress" style="width: 84%"></div>
-              </div>
-            </article>
-
-            <article class="skill-card fade-in-up" data-category="design">
-              <div class="skill-top">
-                <div class="skill-icon">✒</div>
-                <div class="skill-info">
-                  <h4>UX Writing</h4>
-                  <span>Design</span>
-                </div>
-              </div>
-              <div class="skill-bar-wrapper">
-                <div class="skill-bar-progress" style="width: 90%"></div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="projects" id="projects">
-        <div class="container">
-          <div class="section-header fade-in-up">
-            <span class="section-tag">Portfolio</span>
-            <h2 class="section-title">Proyek sederhana yang sedang saya pelajari.</h2>
-            <p class="section-desc">
-              Beberapa hasil belajar saya dalam bidang web, desain, dan teknologi yang terus saya kembangkan.
-            </p>
-          </div>
-
-          <div class="projects-grid">
-            <article class="project-card fade-in-up">
-              <div class="project-image-wrapper">
-                <img class="project-image" src="assets/images/project-mobile.jpg" alt="Project mobile dashboard" />
-                <span class="project-badge">Mobile App</span>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Pulse Finance</h3>
-                <p class="project-desc">
-                  A mobile-first finance dashboard for tracking spending, subscriptions, and cash flow.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">React</span>
-                  <span class="project-tag">UI/UX</span>
-                  <span class="project-tag">Design System</span>
-                </div>
-                <div class="project-actions">
-                  <button class="btn btn-secondary btn-sm project-modal-trigger" type="button" data-project="pulse-finance">
-                    View Details
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card fade-in-up">
-              <div class="project-image-wrapper">
-                <img class="project-image" src="assets/images/project-ecommerce.jpg" alt="Project ecommerce landing page" />
-                <span class="project-badge">E-commerce</span>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Nova Cart</h3>
-                <p class="project-desc">
-                  A conversion-focused storefront experience with seamless browsing and strong visual hierarchy.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">Shopify</span>
-                  <span class="project-tag">Branding</span>
-                  <span class="project-tag">SEO</span>
-                </div>
-                <div class="project-actions">
-                  <button class="btn btn-secondary btn-sm project-modal-trigger" type="button" data-project="nova-cart">
-                    View Details
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card fade-in-up">
-              <div class="project-image-wrapper">
-                <img class="project-image" src="assets/images/project-analytics.jpg" alt="Project analytics dashboard" />
-                <span class="project-badge">Analytics</span>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Signal Insights</h3>
-                <p class="project-desc">
-                  A data-heavy analytics dashboard designed to simplify KPI tracking and strategic decisions.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">Dashboard</span>
-                  <span class="project-tag">Charts</span>
-                  <span class="project-tag">UX</span>
-                </div>
-                <div class="project-actions">
-                  <button class="btn btn-secondary btn-sm project-modal-trigger" type="button" data-project="signal-insights">
-                    View Details
-                  </button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="experience" id="experience">
-        <div class="container">
-          <div class="section-header fade-in-up">
-            <span class="section-tag">Experience</span>
-            <h2 class="section-title">Perjalanan belajar saya.</h2>
-          </div>
-
-          <div class="timeline">
-            <div class="timeline-item fade-in-up">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <div>
-                    <div class="timeline-role">Siswa RPL</div>
-                    <div class="timeline-company">Sekolah saat ini</div>
-                  </div>
-                  <div class="timeline-period">2025 — Sekarang</div>
-                </div>
-                <p class="timeline-desc">
-                  Sedang mempelajari dasar-dasar pemrograman, desain web, dan pengelolaan proyek digital agar bisa membuat karya yang bermanfaat.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item fade-in-up">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <div>
-                    <div class="timeline-role">Belajar Frontend</div>
-                    <div class="timeline-company">HTML, CSS, JavaScript</div>
-                  </div>
-                  <div class="timeline-period">2024 — 2025</div>
-                </div>
-                <p class="timeline-desc">
-                  Mengenal struktur halaman web, styling, dan interaksi dasar untuk membuat tampilan yang lebih baik dan lebih menarik.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item fade-in-up">
-              <div class="timeline-dot"></div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <div>
-                    <div class="timeline-role">Project Pribadi</div>
-                    <div class="timeline-company">Portfolio & landing page</div>
-                  </div>
-                  <div class="timeline-period">2025</div>
-                </div>
-                <p class="timeline-desc">
-                  Mencoba membuat website sederhana dengan desain yang rapi dan konten yang sesuai dengan kebutuhan belajar dan pengembangan diri.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="testimonials">
-        <div class="container">
-          <div class="section-header fade-in-up">
-            <span class="section-tag">Testimonials</span>
-            <h2 class="section-title">Apa kata orang tentang saya.</h2>
-          </div>
-
-          <div class="testimonials-grid">
-            <div class="testimonial-card fade-in-up">
-              <div class="stars">★★★★★</div>
-              <p class="testimonial-quote">
-                “Aryo terlihat semangat dan teliti ketika belajar. Ia cepat memahami materi dan selalu berusaha membuat hasil kerja lebih rapi.”
-              </p>
-              <div class="testimonial-author">
-                <div class="author-avatar">G</div>
-                <div>
-                  <div class="author-name">Guru Teknologi</div>
-                  <div class="author-role">Pembimbing</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial-card fade-in-up">
-              <div class="stars">★★★★★</div>
-              <p class="testimonial-quote">
-                “Ia punya rasa ingin tahu yang tinggi dan semangat belajar yang bagus. Karyanya terlihat lebih rapi dan terstruktur.”
-              </p>
-              <div class="testimonial-author">
-                <div class="author-avatar">T</div>
-                <div>
-                  <div class="author-name">Teman Sekelas</div>
-                  <div class="author-role">RPL</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial-card fade-in-up">
-              <div class="stars">★★★★★</div>
-              <p class="testimonial-quote">
-                “Aryo memiliki semangat belajar yang konsisten. Ia terus mencoba, memperbaiki, dan menyelesaikan tugas dengan sungguh-sungguh.”
-              </p>
-              <div class="testimonial-author">
-                <div class="author-avatar">S</div>
-                <div>
-                  <div class="author-name">Sahabat</div>
-                  <div class="author-role">Pelajar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
-        <div class="container contact-grid">
-          <div class="fade-in-up">
-            <span class="section-tag">Contact</span>
-            <h2 class="section-title">Mari belajar dan berkembang bersama.</h2>
-            <p class="section-desc">
-              Saya terbuka untuk berdiskusi, belajar, dan mengembangkan kemampuan di bidang teknologi dan web.
-            </p>
-
-            <div class="contact-info-list">
-              <div class="contact-card">
-                <div class="contact-icon">✉</div>
-                <div>
-                  <div class="contact-card-title">Email</div>
-                  <div class="contact-card-value">aryo@example.com</div>
-                </div>
-              </div>
-
-              <div class="contact-card">
-                <div class="contact-icon">📍</div>
-                <div>
-                  <div class="contact-card-title">Location</div>
-                  <div class="contact-card-value">Indonesia</div>
-                </div>
-              </div>
-
-              <div class="contact-card">
-                <div class="contact-icon">☎</div>
-                <div>
-                  <div class="contact-card-title">Phone</div>
-                  <div class="contact-card-value">+62 812-0000-0000</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-form-wrapper fade-in-up">
-            <form class="contact-form" id="contactForm">
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="name">Name</label>
-                  <input class="form-control" id="name" name="name" type="text" placeholder="Your name" required />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="email">Email</label>
-                  <input class="form-control" id="email" name="email" type="email" placeholder="you@example.com" required />
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="subject">Subject</label>
-                <input class="form-control" id="subject" name="subject" type="text" placeholder="Project inquiry" required />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="message">Message</label>
-                <textarea class="form-control" id="message" name="message" placeholder="Tell me about your project" required></textarea>
-              </div>
-
-              <button class="btn btn-primary" type="submit">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+    <section class="projects" id="projects">
       <div class="container">
-        <div class="footer-top">
-          <div>
-            <a class="logo" href="#home">
-              <span class="logo-icon">A</span>
-              <span>Aryo</span>
-            </a>
-            <p class="footer-desc">Belajar desain dan teknologi dengan fokus pada karya yang bermanfaat dan rapi.</p>
-          </div>
-
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#about">About</a></li>
-            <li><a class="footer-link" href="#skills">Skills</a></li>
-            <li><a class="footer-link" href="#projects">Projects</a></li>
-            <li><a class="footer-link" href="#contact">Contact</a></li>
-          </ul>
+        <div class="section-header fade-in-up">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Proyek sederhana yang sedang saya pelajari.</h2>
+          <p class="section-desc">
+            Beberapa hasil belajar saya dalam bidang web, desain, dan teknologi yang terus saya kembangkan.
+          </p>
         </div>
 
-        <div class="footer-bottom">
-          <span>© 2026 Aryo Portfolio</span>
-          <span>Built with passion and learning.</span>
+        <div class="projects-grid">
+          <article class="project-card fade-in-up">
+            <div class="project-image-wrapper">
+              <img class="project-image" src="assets/images/project-mobile.jpg" alt="Project mobile dashboard" />
+              <span class="project-badge">Mobile App</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Pulse Finance</h3>
+              <p class="project-desc">
+                A mobile-first finance dashboard for tracking spending, subscriptions, and cash flow.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">UI/UX</span>
+                <span class="project-tag">Design System</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm project-modal-trigger" type="button"
+                  data-project="pulse-finance">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up">
+            <div class="project-image-wrapper">
+              <img class="project-image" src="assets/images/project-ecommerce.jpg"
+                alt="Project ecommerce landing page" />
+              <span class="project-badge">E-commerce</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Nova Cart</h3>
+              <p class="project-desc">
+                A conversion-focused storefront experience with seamless browsing and strong visual hierarchy.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Shopify</span>
+                <span class="project-tag">Branding</span>
+                <span class="project-tag">SEO</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm project-modal-trigger" type="button" data-project="nova-cart">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up">
+            <div class="project-image-wrapper">
+              <img class="project-image" src="assets/images/project-analytics.jpg" alt="Project analytics dashboard" />
+              <span class="project-badge">Analytics</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Signal Insights</h3>
+              <p class="project-desc">
+                A data-heavy analytics dashboard designed to simplify KPI tracking and strategic decisions.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Dashboard</span>
+                <span class="project-tag">Charts</span>
+                <span class="project-tag">UX</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm project-modal-trigger" type="button"
+                  data-project="signal-insights">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
-
-    <div class="modal-overlay" id="projectModal" aria-hidden="true">
-      <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <button class="modal-close" type="button" id="closeModal" aria-label="Close modal">×</button>
-
-        <div class="modal-image-wrapper">
-          <img class="modal-image" id="modalImage" src="" alt="Project preview" />
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag">Experience</span>
+          <h2 class="section-title">Perjalanan belajar saya.</h2>
         </div>
 
-        <div class="modal-body">
-          <h3 class="modal-title" id="modalTitle">Project Title</h3>
-          <div class="modal-subtitle" id="modalSubtitle">Category</div>
-          <p class="modal-description" id="modalDescription"></p>
-
-          <div class="modal-features">
-            <h5>Highlights</h5>
-            <ul id="modalFeatures"></ul>
+        <div class="timeline">
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <div class="timeline-role">Siswa PPLG</div>
+                  <div class="timeline-company">Sekolah saat ini</div>
+                </div>
+                <div class="timeline-period">2025 — Sekarang</div>
+              </div>
+              <p class="timeline-desc">
+                Sedang mempelajari dasar-dasar pemrograman, desain web, dan pengelolaan proyek digital agar bisa membuat
+                karya yang bermanfaat.
+              </p>
+            </div>
           </div>
 
-          <a class="btn btn-primary" href="#contact" id="modalCta">Start a similar project</a>
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <div class="timeline-role">Belajar Frontend</div>
+                  <div class="timeline-company">HTML, CSS, JavaScript</div>
+                </div>
+                <div class="timeline-period">2024 — 2025</div>
+              </div>
+              <p class="timeline-desc">
+                Mengenal struktur halaman web, styling, dan interaksi dasar untuk membuat tampilan yang lebih baik dan
+                lebih menarik.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <div class="timeline-role">Project Pribadi</div>
+                  <div class="timeline-company">Portfolio & landing page</div>
+                </div>
+                <div class="timeline-period">2025</div>
+              </div>
+              <p class="timeline-desc">
+                Mencoba membuat website sederhana dengan desain yang rapi dan konten yang sesuai dengan kebutuhan
+                belajar dan pengembangan diri.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="toast-container" id="toast" aria-live="polite">
-      <div class="toast-icon">✓</div>
-      <div class="toast-message">Message sent successfully.</div>
-    </div>
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">Apa kata orang tentang saya.</h2>
+        </div>
 
-    <script src="script.js"></script>
-  </body>
+        <div class="testimonials-grid">
+          <div class="testimonial-card fade-in-up">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “Aryo terlihat semangat dan teliti ketika belajar. Ia cepat memahami materi dan selalu berusaha membuat
+              hasil kerja lebih rapi.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">G</div>
+              <div>
+                <div class="author-name">Guru Teknologi</div>
+                <div class="author-role">Pembimbing</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in-up">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “Ia punya rasa ingin tahu yang tinggi dan semangat belajar yang bagus. Karyanya terlihat lebih rapi dan
+              terstruktur.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">T</div>
+              <div>
+                <div class="author-name">Teman Sekelas</div>
+                <div class="author-role">RPL</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in-up">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “Aryo memiliki semangat belajar yang konsisten. Ia terus mencoba, memperbaiki, dan menyelesaikan tugas
+              dengan sungguh-sungguh.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">S</div>
+              <div>
+                <div class="author-name">Sahabat</div>
+                <div class="author-role">Pelajar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="fade-in-up">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Mari belajar dan berkembang bersama.</h2>
+          <p class="section-desc">
+            Saya terbuka untuk berdiskusi, belajar, dan mengembangkan kemampuan di bidang teknologi dan web.
+          </p>
+
+          <div class="contact-info-list">
+            <div class="contact-card">
+              <div class="contact-icon">✉</div>
+              <div>
+                <div class="contact-card-title">Email</div>
+                <div class="contact-card-value">aryo@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-card-title">Location</div>
+                <div class="contact-card-value">Indonesia</div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">☎</div>
+              <div>
+                <div class="contact-card-title">Phone</div>
+                <div class="contact-card-value">+62 812-0000-0000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper fade-in-up">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" id="email" name="email" type="email" placeholder="you@example.com"
+                  required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input class="form-control" id="subject" name="subject" type="text" placeholder="Project inquiry"
+                required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" placeholder="Tell me about your project"
+                required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="logo" href="#home">
+            <span class="logo-icon">A</span>
+            <span>Aryo</span>
+          </a>
+          <p class="footer-desc">Belajar desain dan teknologi dengan fokus pada karya yang bermanfaat dan rapi.</p>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#about">About</a></li>
+          <li><a class="footer-link" href="#skills">Skills</a></li>
+          <li><a class="footer-link" href="#projects">Projects</a></li>
+          <li><a class="footer-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Aryo Portfolio</span>
+        <span>Built with passion and learning.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+  <div class="modal-overlay" id="projectModal" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" id="closeModal" aria-label="Close modal">×</button>
+
+      <div class="modal-image-wrapper">
+        <img class="modal-image" id="modalImage" src="" alt="Project preview" />
+      </div>
+
+      <div class="modal-body">
+        <h3 class="modal-title" id="modalTitle">Project Title</h3>
+        <div class="modal-subtitle" id="modalSubtitle">Category</div>
+        <p class="modal-description" id="modalDescription"></p>
+
+        <div class="modal-features">
+          <h5>Highlights</h5>
+          <ul id="modalFeatures"></ul>
+        </div>
+
+        <a class="btn btn-primary" href="#contact" id="modalCta">Start a similar project</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast" aria-live="polite">
+    <div class="toast-icon">✓</div>
+    <div class="toast-message">Message sent successfully.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
